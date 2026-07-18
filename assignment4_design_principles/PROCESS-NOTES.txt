@@ -1,0 +1,18 @@
+Assignment 4: Four Principles of Web Design
+
+Process Notes:
+1. I researched contrast, repetition, alignment, and proximity.
+2. I chose one website for each design principle.
+3. I took screenshots of the four websites.
+4. I created an HTML page with headings and paragraphs.
+5. I added links to each website.
+6. I used an unordered list, an ordered list, and a description list.
+7. I added the screenshots with image tags.
+8. I tested the links and images in my browser.
+9. I uploaded the assignment to GitHub Pages.
+
+Live website link:
+
+
+GitHub repository link:
+https://github.com/bigwoppa/Web-Dev-Learning
