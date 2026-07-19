@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stimulation Clicker Layout Experiments</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Stimulation Clicker Layout Lab</h1>
+    <p>A static preview for a future clicker page.</p>
+  </header>
+
+  <nav>
+    <a href="#box-model">Box Model</a>
+    <a href="#display">Div and Span Tags.</a>
+    <a href="#floats">Float and Clear</a>
+    <a href="#positioning">Positioning</a>
+    <a href="concept.html">Final Concept</a>
+  </nav>
+
+  <main>
+    <!-- Box model experiment: border, padding, and margin -->
+    <section id="box-model" class="experiment box-model-experiment">
+      <h2>Stimulation Meter</h2>
+      <p>The meter and click area demonstrate borders, padding, and margins.</p>
+
+      <div class="meter">
+        <div class="meter-fill">62% STIMULATED</div>
+      </div>
+
+      <div class="click-area">
+        CLICK FOR MORE STIMULATION
+      </div>
+    </section>
+
+    <!-- Div and Span Tags. element experiment -->
+    <section id="display" class="experiment display-experiment">
+      <h2>Div and Span Tags.</h2>
+      <p>These small alerts are consecutive inline elements:</p>
+
+      <span class="inline-alert">+1 VIDEO</span>
+      <span class="inline-alert">+1 MESSAGE</span>
+      <span class="inline-alert">+1 SOUND</span>
+
+      <p>These notifications are consecutive block elements:</p>
+
+      <div class="block-alert">NEW NOTIFICATION</div>
+      <div class="block-alert">LIMITED REWARD AVAILABLE</div>
+    </section>
+
+    <!-- Float, clear, and clearfix experiment -->
+    <section id="floats" class="experiment float-experiment clearfix">
+      <h2>Float, Clear, and Clearfix</h2>
+
+      <div class="fake-ad ad-left">
+        LEFT DISTRACTION<br>
+        KEEP LOOKING!
+      </div>
+
+      <div class="fake-ad ad-right">
+        RIGHT DISTRACTION<br>
+        DO NOT LEAVE!
+      </div>
+
+      <p class="float-text">
+        The two distraction panels float to opposite sides. This paragraph sits between them,
+        while the section uses a clearfix so its background still surrounds the floated boxes.
+      </p>
+
+      <p class="clear-example">
+        This line uses clear so it begins below both floated panels.
+      </p>
+    </section>
+
+    <!-- Relative and absolute positioning experiment -->
+    <section id="positioning" class="experiment position-experiment">
+      <h2>Relative and Absolute Positioning</h2>
+
+      <div class="static-message">This notice uses the normal static position.</div>
+
+      <div class="game-board">
+        <p>Future clicker area</p>
+        <div class="main-button">CLICK</div>
+        <div class="absolute-popup">POP-UP!</div>
+        <div class="relative-message">This message moved from its normal position.</div>
+        <div class="overlap-one">FIRST LAYER</div>
+        <div class="overlap-two">HIGHER Z-INDEX</div>
+      </div>
+
+      <div class="fixed-badge">FIXED DISTRACTION</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lecture 6 CSS layout experiments</p>
+  </footer>
+</body>
+</html>

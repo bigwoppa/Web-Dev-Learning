@@ -1,0 +1,248 @@
+/* Basic page styles */
+body {
+  background-color: #f1f1f1;
+  color: #1d1d1d;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 24px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+}
+
+nav {
+  background-color: #ffdf00;
+  border-bottom: 4px solid #111111;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  background-color: #ffffff;
+  border: 2px solid #111111;
+  color: #111111;
+  display: inline-block;
+  margin: 4px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+main {
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 0 14px;
+}
+
+.experiment {
+  background-color: #ffffff;
+  border: 3px solid #111111;
+  margin: 24px 0;
+  padding: 20px;
+}
+
+/* Box model experiment */
+.meter {
+  background-color: #dddddd;
+  border: 8px solid #111111;
+  margin: 24px 10px;
+  padding: 6px;
+}
+
+.meter-fill {
+  background-color: #ff4d00;
+  color: #ffffff;
+  padding: 16px 4px;
+  text-align: center;
+  width: 62%;
+}
+
+.click-area {
+  background-color: #00e5ff;
+  border: 6px dashed #8b00ff;
+  font-size: 24px;
+  margin: 30px auto 10px auto;
+  padding: 28px;
+  text-align: center;
+  width: 60%;
+}
+
+/* Inline and block experiment */
+.inline-alert {
+  background-color: #ffdf00;
+  border: 2px solid #111111;
+  margin-right: 6px;
+  padding: 6px;
+}
+
+.block-alert {
+  background-color: #ff9acb;
+  border: 2px solid #111111;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* Float, clear, and clearfix experiment */
+.fake-ad {
+  background-color: #b7ff00;
+  border: 4px dotted #111111;
+  padding: 16px;
+  text-align: center;
+  width: 27%;
+}
+
+.ad-left {
+  float: left;
+  margin: 0 18px 14px 0;
+}
+
+.ad-right {
+  float: right;
+  margin: 0 0 14px 18px;
+}
+
+.float-text {
+  min-height: 80px;
+}
+
+.clear-example {
+  border-top: 3px solid #111111;
+  clear: both;
+  padding-top: 12px;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Static, relative, absolute, fixed, and z-index experiment */
+.static-message {
+  background-color: #eeeeee;
+  border: 2px solid #111111;
+  padding: 10px;
+  position: static;
+}
+
+.game-board {
+  background-color: #d8c7ff;
+  border: 5px solid #111111;
+  height: 300px;
+  margin: 20px auto;
+  position: relative;
+  width: 80%;
+}
+
+.game-board > p {
+  margin: 14px;
+}
+
+.main-button {
+  background-color: #ffdf00;
+  border: 5px solid #111111;
+  font-size: 30px;
+  left: 35%;
+  padding: 25px;
+  position: absolute;
+  text-align: center;
+  top: 105px;
+  width: 25%;
+}
+
+.absolute-popup {
+  background-color: #ff4d00;
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  padding: 12px;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+}
+
+.relative-message {
+  background-color: #00e5ff;
+  border: 3px solid #111111;
+  padding: 10px;
+  position: relative;
+  left: 24px;
+  top: 205px;
+  width: 50%;
+}
+
+.overlap-one {
+  background-color: #ff9acb;
+  border: 2px solid #111111;
+  left: 55%;
+  padding: 8px;
+  position: relative;
+  top: 125px;
+  width: 26%;
+  z-index: 1;
+}
+
+.overlap-two {
+  background-color: #b7ff00;
+  border: 2px solid #111111;
+  left: 61%;
+  padding: 8px;
+  position: relative;
+  top: 88px;
+  width: 26%;
+  z-index: 2;
+}
+
+.fixed-badge {
+  background-color: #ff4d00;
+  border: 3px solid #111111;
+  bottom: 12px;
+  color: #ffffff;
+  padding: 8px;
+  position: fixed;
+  right: 12px;
+  z-index: 3;
+}
+
+/* Concept page styles */
+.concept-page {
+  background-color: #d6f5ff;
+}
+
+.concept-summary {
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #111111;
+  clear: both;
+  color: #ffffff;
+  margin-top: 30px;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Smaller screen adjustments */
+@media (max-width: 650px) {
+  .fake-ad {
+    float: none;
+    margin: 12px 0;
+    width: auto;
+  }
+
+  .click-area,
+  .game-board {
+    width: auto;
+  }
+
+  .main-button {
+    left: 24%;
+    width: 40%;
+  }
+}
