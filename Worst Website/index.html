@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A really bad stimulation clicker that gets louder and more annoying as you play.">
+  <meta property="og:title" content="Stimulation Clicker 9000">
+  <meta property="og:description" content="Click until the website becomes completely unbearable.">
+  <meta property="og:image" content="og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Stimulation Clicker - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+  <div class="ticker" aria-hidden="true">
+    <span>*** CLICKING DETECTED *** FREE BRAIN ROT *** MOM GET THE CAMERA ***</span>
+  </div>
+
+  <header class="site-header">
+    <p class="eyebrow">I THOUGHT THIS WOULD BE FUNNY</p>
+    <h1>STIMULATION<br><span>CLICKER 9000</span></h1>
+    <p class="blink">click the button. it gets worse.</p>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <a aria-current="page" href="index.html">Home</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+  </nav>
+
+  <main>
+    <aside class="fake-ad ad-left float-ad">
+      <strong>YOU ARE VISITOR #</strong>
+      <span id="visitorNumber">00042069</span>
+      <small>probably</small>
+    </aside>
+
+    <aside class="fake-ad ad-right float-ad">
+      <strong>FREE BRAIN ROT</strong>
+      <span>+0.0001%</span>
+      <small>no refunds</small>
+    </aside>
+
+    <section class="game-card clearfix" aria-labelledby="game-title">
+      <h2 id="game-title">click it until it sucks</h2>
+      <p class="instructions">Clicking fills the bar. If you stop, it goes back down. More dumb stuff shows up as it gets higher.</p>
+
+      <div class="meter-wrap" aria-label="Stimulation meter">
+        <div class="meter-label">
+          <span>NORMAL</span>
+          <strong id="meterText">0% STIMULATED</strong>
+          <span>COOKED</span>
+        </div>
+        <div class="meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="meter-fill" id="meterFill"></div>
+        </div>
+      </div>
+
+      <div class="click-zone" id="clickZone">
+        <button class="click-button" id="clickButton" type="button">
+          <span>CLICK</span>
+          <small>nothing bad will happen</small>
+        </button>
+        <div class="combo" id="combo">COMBO x0</div>
+        <div class="popup popup-one" aria-hidden="true">!!! FREE NOTHING !!!</div>
+        <div class="popup popup-two" aria-hidden="true">UR WINNER</div>
+      </div>
+
+      <div class="controls">
+        <button id="soundToggle" type="button" aria-pressed="true">SOUND: ON</button>
+        <label class="volume-control" for="volumeControl">
+          LOUDNESS
+          <input id="volumeControl" type="range" min="0" max="100" value="80">
+          <span id="volumeValue">80%</span>
+        </label>
+        <button id="resetButton" type="button">make it normal</button>
+      </div>
+    </section>
+
+    <section class="achievement-wall" aria-labelledby="achievements-title">
+      <h2 id="achievements-title">stuff you unlocked</h2>
+      <div class="badge-row">
+        <span class="inline-alert">+1 VIDEO</span>
+        <span class="inline-alert">+1 MESSAGE</span>
+        <span class="inline-alert">+1 SOUND</span>
+      </div>
+      <div class="block-alert">NEW NOTIFICATION: NOTHING HAPPENED</div>
+      <div class="block-alert">LIMITED REWARD AVAILABLE (NOT REAL)</div>
+    </section>
+
+    <section class="meme-strip" aria-label="MLG and Rick and Morty image strip">
+      <figure class="meme-card tilt-left">
+        <img src="https://www.pikpng.com/pngl/m/434-4347217_largest-collection-of-free-to-edit-mlg-360.png" alt="Chaotic MLG meme collage with gaming symbols">
+        <figcaption>MLG RESEARCH MATERIAL</figcaption>
+      </figure>
+      <figure class="meme-card tilt-right">
+        <img src="https://media.giphy.com/media/xTiTnJCixyNulN2xtm/giphy.gif" alt="Rick and Morty dancing animated GIF">
+        <figcaption>INTELLECTUAL DANCING</figcaption>
+      </figure>
+      <figure class="meme-card upside-down">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3hvdndqNXFyNDU4c2Z5NHdlYWphMHByeHA0emU5a3RjdjgxMnhuciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XcMPyyKFnp8DcxtTbL/giphy.gif" alt="Mlg stuff">
+        <figcaption>CLICKER CONFIRMED</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <div id="chaosLayer" class="chaos-layer" aria-live="polite" aria-atomic="false"></div>
+  <div class="fixed-badge">THIS FOLLOWS YOU<br><small>sorry</small></div>
+
+  <footer>
+    <p>STIMULATION CLICKER DOT BIZ - probably works on my computer</p>
+    <a href="page3.html#credits">Image credits and project defense</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
